@@ -242,7 +242,8 @@ void decipher()
 }
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/9e9acb28-dba1-4be7-a8a3-1a974217ee2b)
+![Screenshot 2024-10-14 091214](https://github.com/user-attachments/assets/27db5c40-a222-40b3-ae99-759ed66e225f)
+
 
 
 ## RESULT:
@@ -413,7 +414,7 @@ return 0;
 }
 ```
 ## OUTPUT:
-![image](https://github.com/POKALAGURAVAIAH8121/Cryptography---19CS412-classical-techqniques/assets/128034765/1dec4484-be2a-4581-b607-6f651bc5c1aa)
+![Screenshot 2024-10-14 092537](https://github.com/user-attachments/assets/03885a9c-9d75-4e82-b6be-1aac31746e00)
 
 ## RESULT:
 The program is executed successfully
