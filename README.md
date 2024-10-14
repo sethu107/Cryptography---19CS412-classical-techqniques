@@ -242,7 +242,7 @@ void decipher()
 }
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/78e479f8-5852-4ab5-838a-21c7ab960621)
+![image](https://github.com/user-attachments/assets/9e9acb28-dba1-4be7-a8a3-1a974217ee2b)
 
 
 ## RESULT:
