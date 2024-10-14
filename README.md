@@ -414,7 +414,8 @@ return 0;
 }
 ```
 ## OUTPUT:
-![Screenshot 2024-10-14 092537](https://github.com/user-attachments/assets/03885a9c-9d75-4e82-b6be-1aac31746e00)
+![WhatsApp Image 2024-10-14 at 09 28 22_b17c55a5](https://github.com/user-attachments/assets/fc34fb5c-ffbb-4ae6-9719-c44ce9b41423)
+
 
 ## RESULT:
 The program is executed successfully
