@@ -171,51 +171,79 @@ Testing algorithm with different key values.
 
 ## PROGRAM:
 ```
-#include<stdio.h>
-#include<string.h>
-int main(){
-unsigned int a[3][3]={{6,24,1},{13,16,10},{20,17,15}};
-unsigned int b[3][3]={{8,5,10},{21,8,21},{21,12,8}};
-int i,j, t=0;
-unsigned int c[20],d[20];
-char msg[20];
-printf("Enter plain text: ");
-scanf("%s",msg);
-for(i=0;i<strlen(msg);i++)
+#include <stdio.h>
+#include<conio.h>
+#include <ctype.h>
+#include <string.h>
+void encipher();
+void decipher();
+void main()
 {
-c[i]=msg[i]-65;
-unsigned int a[3][3]={{6,24,1},{13,16,10},{20,17,15}};
-unsigned int b[3][3]={{8,5,10},{21,8,21},{21,12,8}};
-printf("%d ",c[i]);
-}
-for(i=0;i<3;i++)
-{ t=0;
-for(j=0;j<3;j++)
+    int choice;
+    while(1)
 {
-t=t+(a[i][j]*c[j]);
+    printf("\n1. Encrypt Text");
+    printf("\t2. Decrypt Text");
+    printf("\t3. Exit");
+    printf("\n\nEnter Your Choice : ");
+    scanf("%d",&choice);
+    if(choice == 3)
+    exit(0);
+    else if(choice == 1)
+    encipher();
+    else if(choice == 2)
+    decipher();
+    else
+    printf("Please Enter Valid Option.");
 }
-d[i]=t%26;
 }
-printf("\nEncrypted Cipher Text :");
-for(i=0;i<3;i++)
-printf(" %c",d[i]+65);
-for(i=0;i<3;i++)
+void encipher()
 {
-t=0;
-for(j=0;j<3;j++)
+    unsigned int i,j;
+    char input[50],key[10];
+    printf("\n\nEnter Plain Text: ");
+    scanf("%s",input);
+    printf("\nEnter Key Value: ");
+    scanf("%s",key);
+    printf("\nResultant Cipher Text: ");
+    for(i=0,j=0;i<strlen(input);i++,j++)
+    {
+        if(j>=strlen(key))
+        {
+            j=0;
+        }
+        printf("%c",65+(((toupper(input[i])-65)+(toupper(key[j])-65))%26));
+    }
+    
+}
+void decipher()
 {
-t=t+(b[i][j]*d[j]);
-}
-c[i]=t%26;
-}
-printf("\nDecrypted Cipher Text :");
-for(i=0;i<3;i++)
-printf(" %c",c[i]+65);
-return 0;
+    unsigned int i,j;
+    char input[50],key[10];
+    int value;
+    printf("\n\nEnter Cipher Text: ");
+    scanf("%s",input);
+    printf("\n\nEnter the key value: ");
+    scanf("%s",key);
+    for(i=0,j=0;i<strlen(input);i++,j++)
+    {
+        if(j>=strlen(key))
+        { 
+            j=0;
+            
+        }
+        value = (toupper(input[i])-64)-(toupper(key[j])-64);
+        if( value < 0)
+        {
+            value = value * -1;
+        }
+        printf("%c",65 + (value % 26));
+        
+    }
 }
 ```
 ## OUTPUT:
-![image](https://github.com/POKALAGURAVAIAH8121/Cryptography---19CS412-classical-techqniques/assets/128034765/6ab77077-a6df-4d71-89c9-cdf7e49d4ac5)
+![Screenshot 2024-10-14 091028](https://github.com/user-attachments/assets/8586d2a2-e7c4-46cc-abf5-e43b0d33c10e)
 
 ## RESULT:
 The program is executed successfully
