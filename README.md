@@ -243,7 +243,8 @@ void decipher()
 }
 ```
 ## OUTPUT:
-![Screenshot 2024-10-14 091028](https://github.com/user-attachments/assets/8586d2a2-e7c4-46cc-abf5-e43b0d33c10e)
+![image](https://github.com/user-attachments/assets/78e479f8-5852-4ab5-838a-21c7ab960621)
+
 
 ## RESULT:
 The program is executed successfully
