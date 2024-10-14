@@ -218,7 +218,7 @@ return 0;
 }
 ```
 ## OUTPUT:
-![image](https://github.com/POKALAGURAVAIAH8121/Cryptography---19CS412-classical-techqniques/assets/128034765/85d442a2-05db-439e-99b4-fa89dd5be6e0)
+![image](https://github.com/user-attachments/assets/ef48ae97-1d7b-49c6-8424-a643b9c93ffb)
 
 ## RESULT:
 The program is executed successfully
