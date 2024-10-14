@@ -62,8 +62,7 @@ return 0;
 }
 ```
 ## OUTPUT:
-![Screenshot 2024-10-14 084708](https://github.com/user-attachments/assets/e297cf78-bba9-4ebe-a8fc-3230d3e3e253)
-
+![image](https://github.com/user-attachments/assets/d9dc6944-06ba-4223-bdcd-719749e63f85)
 
 ## RESULT:
 The program is executed successfully
